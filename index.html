@@ -1,0 +1,325 @@
+<!DOCTYPE html><html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>to เบบี๋ของเค้า 💌</title><style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Tahoma,sans-serif;
+    overflow:hidden;
+}
+
+
+/* =====================
+ทุกหน้า
+===================== */
+
+.page{
+    width:100vw;
+    height:100vh;
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* =====================
+หน้าแรก จดหมาย
+===================== */
+
+#page1{
+    display:flex;
+    background:linear-gradient(135deg,#ffcce6,#d6d4ff,#bde0fe);
+    overflow-y:auto;
+}
+
+
+.letter{
+    width:90%;
+    max-width:700px;
+    background:white;
+    padding:35px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    margin:30px auto;
+}
+
+
+h1{
+    color:#ff4f93;
+}
+
+
+.message{
+    text-align:left;
+    font-size:18px;
+    line-height:2;
+    color:#555;
+}
+
+
+/* ปุ่ม */
+
+button{
+    margin-top:30px;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:18px;
+    background:#ff5c9a;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+
+button:hover{
+    transform:scale(1.1);
+}
+
+
+/* =====================
+หน้าหัวใจ
+===================== */
+
+#page2{
+    background:linear-gradient(
+        135deg,
+        #ff9fc8,
+        #ffd6ec,
+        #c8b6ff
+    );
+
+    position:relative;
+    overflow:hidden;
+}
+
+
+/* =====================
+คำว่ารักบี๋
+===================== */
+
+.love{
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    font-size:
+    clamp(20px,4vw,40px);
+
+    font-weight:bold;
+
+    color:#ff2f7d;
+
+    text-shadow:
+    0 0 10px white;
+
+    opacity:0;
+
+    transition:
+    all 3s cubic-bezier(
+        .2,
+        .8,
+        .2,
+        1
+    );
+
+}
+
+
+/* ตอนคำกระจัดกระจาย */
+
+.start1{left:5%;top:5%;}
+.start2{left:90%;top:10%;}
+.start3{left:10%;top:90%;}
+.start4{left:85%;top:85%;}
+.start5{left:50%;top:5%;}
+.start6{left:5%;top:50%;}
+.start7{left:90%;top:50%;}
+.start8{left:50%;top:90%;}
+.start9{left:20%;top:20%;}
+.start10{left:80%;top:20%;}
+.start11{left:20%;top:75%;}
+.start12{left:80%;top:75%;}
+
+.start13{left:35%;top:5%;}
+.start14{left:65%;top:5%;}
+.start15{left:5%;top:30%;}
+.start16{left:95%;top:30%;}
+
+
+/* =====================
+ตำแหน่งสุดท้าย
+รูปหัวใจ
+===================== */
+
+.end1{left:35%;top:18%;}
+.end2{left:45%;top:12%;}
+.end3{left:55%;top:18%;}
+
+.end4{left:25%;top:25%;}
+.end5{left:65%;top:25%;}
+
+.end6{left:18%;top:35%;}
+.end7{left:72%;top:35%;}
+
+.end8{left:22%;top:48%;}
+.end9{left:68%;top:48%;}
+
+.end10{left:30%;top:60%;}
+.end11{left:60%;top:60%;}
+
+.end12{left:38%;top:72%;}
+.end13{left:52%;top:72%;}
+
+.end14{left:45%;top:84%;}
+.end15{left:50%;top:84%;}
+
+.end16{left:48%;top:90%;}
+
+
+/* =====================
+หัวใจเต้นหลังรวมตัว
+===================== */
+
+.heartBeat{
+
+    animation:
+    beat
+    1.5s infinite;
+
+}
+
+
+@keyframes beat{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.15);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+</style></head><body><!-- =====================
+หน้าแรก
+===================== --><div class="page" id="page1"><div class="letter"><h1>
+ถึงบี๋ 💌
+</h1><div class="message">เค้าขอโทษน้า ขอโทษที่ลืมวันที่ แต่เค้าไม่ได้หมดรักเบบี๋น้าเค้ารักเบบี๋มากๆเอ็นดูเธอทุกวันอยากโอ๋ตลอดไม่ได้หมดรักเธอเลยน้า เค้าขอโทษที่ทำให้เธอรู้สึกไม่ดีนะคะเค้าม่ายสัญญาแต่จะพยายามไม่มีครั้งถัดไปอีกนะคะ
+
+</div><button onclick="showHeart()">
+กดตรงนี้นะ 💗
+</button></div></div><!-- =====================
+หน้าหัวใจ
+===================== --><div class="page" id="page2"><span class="love start1" id="l1">รักบี๋</span>
+<span class="love start2" id="l2">รักบี๋</span>
+<span class="love start3" id="l3">รักบี๋</span>
+<span class="love start4" id="l4">รักบี๋</span>
+
+<span class="love start5" id="l5">รักบี๋</span>
+<span class="love start6" id="l6">รักบี๋</span>
+<span class="love start7" id="l7">รักบี๋</span>
+<span class="love start8" id="l8">รักบี๋</span>
+
+<span class="love start9" id="l9">รักบี๋</span>
+<span class="love start10" id="l10">รักบี๋</span>
+<span class="love start11" id="l11">รักบี๋</span>
+<span class="love start12" id="l12">รักบี๋</span>
+
+<span class="love start13" id="l13">รักบี๋</span>
+<span class="love start14" id="l14">รักบี๋</span>
+<span class="love start15" id="l15">รักบี๋</span>
+<span class="love start16" id="l16">รักบี๋</span>
+
+</div><script>
+
+
+function showHeart(){
+
+    /* ซ่อนหน้าจดหมาย */
+
+    document
+    .getElementById("page1")
+    .style
+    .display="none";
+
+
+    /* เปิดหน้าหัวใจ */
+
+    document
+    .getElementById("page2")
+    .style
+    .display="flex";
+
+
+    /* ทำให้คำปรากฏ */
+
+    setTimeout(function(){
+
+        for(let i=1;i<=16;i++){
+
+            document
+            .getElementById("l"+i)
+            .style
+            .opacity="1";
+
+        }
+
+    },300);
+
+
+
+    /* ค่อยๆบินมารวมเป็นหัวใจ */
+
+    setTimeout(function(){
+
+        for(let i=1;i<=16;i++){
+
+            let love=
+
+            document
+            .getElementById("l"+i);
+
+
+            love.className=
+
+            "love end"+i;
+
+        }
+
+    },800);
+
+
+    /* หลังรวมเสร็จ */
+
+    setTimeout(function(){
+
+        for(let i=1;i<=16;i++){
+
+            document
+            .getElementById("l"+i)
+            .classList
+            .add("heartBeat");
+
+        }
+
+    },4000);
+
+}
+
+
+</script></body>
+                                         </html>
